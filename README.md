@@ -9,4 +9,4 @@ python run.py train_evaluate configs/baseline.yaml data/eval/feature.csv data/ev
 
 python run.py train_evaluate configs/Res_conformer.yaml data/eval/feature.csv data/eval/label.csv 
 
-Of course, you need data, which i have not upload it. 
+Of course, you need data, but i have not upload it. 
