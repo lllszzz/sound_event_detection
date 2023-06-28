@@ -1,0 +1,27 @@
+data:
+    feature: data/dev/feature.csv
+    label: data/dev/label.csv
+    class_indice_file: data/metadata/class_label_indices.txt
+    stratified: True
+dataloader_args:
+    batch_size: 64
+    num_workers: 1
+
+optimizer:
+    type: AdamW
+    args:
+        lr: 0.0002
+
+scheduler_args:
+    factor: 0.2
+    patience: 5
+    min_lr: 0.0000001
+
+epochs: 100 
+model:
+    type: ResNetConformer
+    args: 
+        num_resblks: 8
+        num_confblks: 8
+
+outputpath: experiments/
